@@ -1,0 +1,262 @@
+<div class="header">
+  <div class="container">   
+    <div class="logo">
+      <h1><a href="/" >SHAKUNTALA ENTERPRISES</a></h1>
+    </div> 
+        <div class="menu">
+            <a href="" id="menuToggle"> <span class="navClosed"></span> </a>
+            <nav>  
+              <a href="/" class="active scroll">Home</a> 
+              <a href="#about" class="scroll">About</a>  
+              <a href="#services" class="scroll">Services</a>  
+              <a href="#news" class="scroll">News</a>
+              <a href="#spec" class="scroll">Specifications</a> 
+              <a href="#gallery" class="scroll">Gallery</a> 
+              <a href="#contact" class="scroll">Contact</a> 
+              <a href="/video-gallery" class="">Video Gallery</a> 
+               <a href="/media-gallery" class="">Midea Gallery</a> 
+            </nav>
+          <script>
+            (function($){
+              // Menu Functions
+              $(document).ready(function(){
+              $('#menuToggle').click(function(e){
+                var $parent = $(this).parent('.menu');
+                $parent.toggleClass("open");
+                var navState = $parent.hasClass('open') ? "hide" : "show";
+                $(this).attr("title", navState + " navigation");
+                  // Set the timeout to the animation length in the CSS.
+                  setTimeout(function(){
+                    console.log("timeout set");
+                    $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
+                  }, 200);
+                e.preventDefault();
+              });
+              });
+            })(jQuery);
+          </script>
+          </div>
+           <div class="clearfix"> </div>
+  </div>
+</div>
+<div id="spec" class="spec jarallax">
+  <div class="container"> 
+    <h3 class="agileits-title w3title2"><span>S</span>pecifications</h3>
+    <div class="specw3-agileits">
+      <div class="row">
+        <div class="col-md-4 spec-grids"> 
+          <h4>MODELS</h4>
+          <ul>
+            <li>
+              <div>
+                <p><a href="">SPORT 63 MINI </a></p>
+              </div>
+              <div class="clearfix"> </div>
+            </li>
+            <li>
+              <div>
+                <p><a href="/specification-storm-zx">STORM ZX </a></p>
+              </div>
+              <div class="clearfix"></div>
+            </li>
+            <li>
+              <div>
+                <p><a href="/specification-sport-63">SPORT 63</a></p>
+              </div>
+              <div class="clearfix"> </div>
+            </li>
+            <li>
+              <div>
+                <p><a href="/specification-electrica-48">ELECTRICA48</a></p>
+              </div>
+              <div class="clearfix"> </div>
+            </li>
+            <li>
+              <div>
+                <p><a href="/specification-flash">FLASH</a></p>
+              </div>
+              
+              <div class="clearfix"> </div>
+            </li>
+            <li>
+              <div>
+                <p><a href="/specification-dora">DORA</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>  
+     
+        <div class="col-md-8 spec-grids"> 
+          <div style="height:400px; width:600px; " id="slider">
+            <%= image_tag "img1.jpg"%>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 spec-grids"> 
+            <h4 style="margin-top:30px;"> Key Features</h4>
+            <ul>
+              <li>
+                <div class="specf-left">
+                  <p style="font-weight: bolder;color:#6199ff">BATTERY</p>
+                </div>
+                <div class="specf-right">
+                  <p>12 v 25AH x 4 battery (lad acid dry battery) </p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p>CHARGING TIME  </p>
+                </div>
+                <div class="specf-right">
+                  <p>5-6 hrs (auto cut system)</p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p>KM/CHARGE ON ECONOMY MODE</p>
+                </div>
+                <div class="specf-right">
+                  <p>50 KM </p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p style="font-weight: bolder;color:#6199ff">SUSPENSION</p>
+                </div>
+               
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p>FRONT</p>
+                </div>
+                <div class="specf-right">
+                  <p>TELESCOPIC</p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p>REAR</p>
+                </div>
+                <div class="specf-right">
+                  <p>HYDRAULIC </p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                    <p style="font-weight: bolder;color:#6199ff">BRAKES</p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p>REAR</p>
+                </div>
+                <div class="specf-right">
+                  <p>DRUM BREAK </p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p>FRONT</p>
+                </div>
+                <div class="specf-right">
+                  <p>DRUM BREAK </p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+            </ul>
+          </div> 
+
+          <div class="col-md-6 spec-grids" > 
+            <h4 style="margin-top: 40px;"> Key Features</h4>
+            <ul>
+              <li>
+                  <div class="specf-left">
+                    <p style="font-weight: bolder;color:#6199ff">TYRE SIZE</p>
+                  </div>
+                  <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p>FRONT</p>
+                </div>
+                <div class="specf-right">
+                  <p>3.10pr </p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p>REAR</p>
+                </div>
+                <div class="specf-right">
+                  <p>3.10pr </p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p style="font-weight: bolder;color:#6199ff">MOTOR POWER</p>
+                </div>
+                  <div class="specf-right">
+                    <p>250 WATT </p>
+                  </div>
+                  <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p style="font-weight: bolder;color:#6199ff">LOADING CAPICITY</p>
+                </div>
+                <div class="specf-right">
+                  <p>150 Kg </p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p style="font-weight: bolder;color:#6199ff">ADDITIONAL FEATURES</p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p>ALLOY WHEEL</p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p>TUBELESS TYRE</p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p>REGENERATIVE BRAKING</p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="specf-left">
+                  <p style="font-weight: bolder;color:#6199ff">COLORS</p>
+                </div>
+                <div class="specf-right">
+                  <p>RED/BLUE/WHITE/BLACK/PICH/PURPLE </p>
+                </div>
+                <div class="clearfix"> </div>
+              </li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>          
+      

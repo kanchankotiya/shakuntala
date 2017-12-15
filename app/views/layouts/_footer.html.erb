@@ -1,0 +1,138 @@
+<!-- footer -->
+<div class="footer">
+  <div class="container"> 
+    <div class="footer-w3lsrow">
+      <div class="col-md-4 footer-grids footer-address">
+        <h3>Contact Us :</h3>
+        <ul>
+          <li><i class="glyphicon glyphicon-send"></i> <span class="text-justify">Head office : House No.36, Sector- FB , sch. 94, Bengali Pipliyahana Service Road , Near Lokhandwala Indore (M.P.) 
+          </span></li>
+          <li><i class="glyphicon glyphicon-phone"></i>  0731-4974841 <span> &nbsp; 7987163048 </span></li>
+          <li><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:example@mail.com">  shakuntala.enterprises09@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 footer-grids footer-subscribe ">
+        <h3>Satisfied Customers :</h3>
+        <span class="timer" style="color:white;"></span>          
+      </div>
+      <div class="col-md-4 footer-grids footer-icons" style="padding-right:20px;">
+        <h3>Follow Us :</h3>
+        <div class="agile_social_icons">
+          <ul class="agileits_social_list">
+            <li><a href="https://www.facebook.com/tunwal.automobile/" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/EbikestunwalSE" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/shakuntalaenterprises/" class="w3_agile_ins"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+          </ul>
+        </div>  
+
+        <div class="clearfix"> </div>
+      </div>
+      <div>
+      <span class="glyphicon glyphicon-chevron-up" id="gl"  onclick="topFunction()" id="myBtn"></span>
+        <style type="text/css">
+          #gl {
+            float: right;
+            margin-top:-60px;
+            top:5px;
+            padding-right: 15px;
+            font-size:50px; 
+            color:#6199ff;
+          }
+
+          
+        </style>
+        <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</div>
+<div class="clearfix"> </div>
+</div>
+<div class="footer-bottom">
+  <p>© 2017 SHAKUNTALA ENTERPRISES. All rights reserved | Devloped by <a href="http://w3layouts.com">NextStep Digital Solution Pvt.Ltd.</a></p>
+</div>
+</div>
+</div>
+
+
+<script>
+  (function($) {
+    $.fn.countTo = function(options) {
+        // merge the default plugin settings with the custom options
+        options = $.extend({}, $.fn.countTo.defaults, options || {});
+
+        // how many times to update the value, and how much to increment the value on each update
+        var loops = Math.ceil(options.speed / options.refreshInterval),
+        increment = (options.to - options.from) / loops;
+
+        return $(this).each(function() {
+          var _this = this,
+          loopCount = 0,
+          value = options.from,
+          interval = setInterval(updateTimer, options.refreshInterval);
+
+          function updateTimer() {
+            value += increment;
+            loopCount++;
+            $(_this).html(value.toFixed(options.decimals));
+
+            if (typeof(options.onUpdate) == 'function') {
+              options.onUpdate.call(_this, value);
+            }
+
+            if (loopCount >= loops) {
+              clearInterval(interval);
+              value = options.to;
+
+              if (typeof(options.onComplete) == 'function') {
+                options.onComplete.call(_this, value);
+              }
+            }
+          }
+        });
+      };
+
+      $.fn.countTo.defaults = {
+        from: 0,  // the number the element should start at
+        to: 100,  // the number the element should end at
+        speed: 1000,  // how long it should take to count between the target numbers
+        refreshInterval: 100,  // how often the element should be updated
+        decimals: 0,  // the number of decimal places to show
+        onUpdate: null,  // callback method for every time the element is updated,
+        onComplete: null,  // callback method for when the element finishes updating
+      };
+    })(jQuery);
+
+    jQuery(function($) {
+      $('.timer').countTo({
+        from: 50,
+        to: 3500,
+        speed: 20000,
+        refreshInterval: 30,
+        onComplete: function(value) {
+          console.debug(this);
+        }
+      });
+    });
+  </script>
+
+  <style type="text/css">
+    .timer{width:200px; margin:20px auto;text-align:center;display:block;font-size:40px}
+  </style>
