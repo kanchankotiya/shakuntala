@@ -1,11 +1,20 @@
 class HomeController < ApplicationController
+   impressionist :actions=>[:video_gallery]
   skip_before_action :verify_authenticity_token
+   
+
   def index
+  
   end
+  
+  def show
+  end
+
   def specification_1
   end
 
   def specification_2
+
   end
 
   def specification_3
@@ -21,6 +30,7 @@ class HomeController < ApplicationController
   end
   
   def video_gallery
+   
   end
 
   def create_contact
@@ -28,6 +38,7 @@ class HomeController < ApplicationController
     if @contact.save
       redirect_to root_path
     end
+     impressionist(@contact)
   end
 
   private
