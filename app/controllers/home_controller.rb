@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-   impressionist :actions=>[:video_gallery]
+   
   skip_before_action :verify_authenticity_token
    
 
