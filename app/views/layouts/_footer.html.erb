@@ -29,7 +29,7 @@
 
         <div class="clearfix"> </div>
       </div>
-         
+
       <div>
       <span class="glyphicon glyphicon-chevron-up" id="gl"  onclick="topFunction()" id="myBtn"></span>
         <style type="text/css">
@@ -68,39 +68,10 @@ function topFunction() {
 </div>
 <div class="footer-bottom">
   <p>© 2017 SHAKUNTALA ENTERPRISES. All rights reserved | Devloped by <a href="http://www.nsdigitialsolution.com">NextStep Digital Solution Pvt.Ltd.</a></p>
-  <div class="pull-right counter-div" >
-  <h3>Total Visitors</h3>
-   <SCRIPT>
-             expireDate = new Date
-             expireDate.setMonth(expireDate.getMonth()+6)
-          jcount = eval(cookieVal("jaafarCounter"))
-          jcount++
-          document.cookie = "jaafarCounter="+jcount+";expires=" + expireDate.toGMTString()
-
-          function cookieVal(cookieName) {
-          thisCookie = document.cookie.split("; ")
-          for (i=0; i<thisCookie.length; i++){
-          if (cookieName == thisCookie[i].split("=")[0]){
-          return thisCookie[i].split("=")[1]
-          }
-          }
-          return 0
-          }
-
-          function page_counter(){
-          for (i=0;i<(7-jcount.toString().length);i++)
-          document.write('<span class="counter">0</span>')
-          for (y=0;y<(jcount.toString().length);y++)
-          document.write('<span class="counter">'+jcount.toString().charAt(y)+'</span>')
-          }
-          </SCRIPT>
-
-          <SCRIPT>
-          page_counter(jcount);
-          </SCRIPT>
-  </div>
 </div>
-</div>
+
+
+
 </div>
 
 
@@ -167,13 +138,9 @@ function topFunction() {
 
   <style type="text/css">
     .timer{width:200px; margin:20px auto;text-align:center;display:block;font-size:40px}
-    .counter
-    {
-      color:white;
-      font-size: 40px;
-    }
-    .counter-div h3
-    {
-      color:#ea7686;
-    }
   </style>
+<html>
+<head>
+
+</head>
+</html>
