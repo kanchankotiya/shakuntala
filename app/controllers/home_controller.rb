@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  impressionist 
+ 
   skip_before_action :verify_authenticity_token
    
 
@@ -38,7 +38,7 @@ class HomeController < ApplicationController
     if @contact.save
       redirect_to root_path
     end
-     impressionist(@contact)
+    
   end
 
   private
