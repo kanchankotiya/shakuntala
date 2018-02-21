@@ -1,76 +1,86 @@
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <%= image_tag "popup.jpeg", class: "img-responsive"%>
+      </div>
+    </div>
 
-  <div id="home" class="banner">
-    <div class="banner-agileinfo">
-      <!-- header -->
-      <div class="header">
-        <div class="container">   
-          <div class="logo">
-            <h1><a href="/">SHAKUNTALA ENTERPRISES</a></h1>
-           
-          </div> 
-   
-          <div class="menu">
-            <a href="" id="menuToggle"> <span class="navClosed"></span> </a>
-            <nav>  
-              <a href="#home" class="active scroll">Home</a> 
-              <a href="#about" class="scroll">About</a>  
-              <a href="#services" class="scroll">Services</a>  
-              <a href="#news" class="scroll">News</a>
-              <a href="#spec" class="scroll">Specifications</a> 
-              <a href="#gallery" class="scroll">Gallery</a> 
-              <a href="#contact" class="scroll">Contact</a> 
-              <a href="/video-gallery" class="">Video Gallery</a> 
-               <a href="/media-gallery" class="">Midea Gallery</a> 
-            </nav>
-            <script>
+  </div>
+</div>
+<div id="home" class="banner">
+  <div class="banner-agileinfo">
+    <!-- header -->
+    <div class="header">
+      <div class="container">   
+        <div class="logo">
+          <h1><a href="/">SHAKUNTALA ENTERPRISES</a></h1>
+
+        </div> 
+
+        <div class="menu">
+          <a href="" id="menuToggle"> <span class="navClosed"></span> </a>
+          <nav>  
+            <a href="#home" class="active scroll">Home</a> 
+            <a href="#about" class="scroll">About</a>  
+            <a href="#services" class="scroll">Services</a>  
+            <a href="#news" class="scroll">News</a>
+            <a href="#spec" class="scroll">Specifications</a> 
+            <a href="#gallery" class="scroll">Gallery</a> 
+            <a href="#contact" class="scroll">Contact</a> 
+            <a href="/video-gallery" class="">Video Gallery</a> 
+            <a href="/media-gallery" class="">Midea Gallery</a> 
+          </nav>
+          <script>
             (function($){
               // Menu Functions
               $(document).ready(function(){
-              $('#menuToggle').click(function(e){
-                var $parent = $(this).parent('.menu');
-                $parent.toggleClass("open");
-                var navState = $parent.hasClass('open') ? "hide" : "show";
-                $(this).attr("title", navState + " navigation");
+                $('#menuToggle').click(function(e){
+                  var $parent = $(this).parent('.menu');
+                  $parent.toggleClass("open");
+                  var navState = $parent.hasClass('open') ? "hide" : "show";
+                  $(this).attr("title", navState + " navigation");
                   // Set the timeout to the animation length in the CSS.
                   setTimeout(function(){
                     console.log("timeout set");
                     $('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
                   }, 200);
-                e.preventDefault();
-              });
+                  e.preventDefault();
+                });
               });
             })(jQuery);
-            </script>
-     
-          </div>
-          <div class="clearfix"> </div>
+          </script>
+
         </div>
-      </div>
-      <!-- //header -->
-      <div class="banner-text">
-        <div class="container">   
-          <h2 class="b1">WE OFFER THE BEST <span>E-BIKES</span></h2>
-          <a href="#about" class="buy btn-wayra scroll" style="box-shadow:2px 2px 2px black;"><font style="font-size:20px;text-shadow: 2px 2px 2px black;font-weight: bold;">More About</font></a>
-        </div> 
+        <div class="clearfix"> </div>
       </div>
     </div>
+    <!-- //header -->
+    <div class="banner-text">
+      <div class="container">   
+        <h2 class="b1">WE OFFER THE BEST <span>E-BIKES</span></h2>
+        <a href="#about" class="buy btn-wayra scroll" style="box-shadow:2px 2px 2px black;"><font style="font-size:20px;text-shadow: 2px 2px 2px black;font-weight: bold;">More About</font></a>
+      </div> 
+    </div>
   </div>
-  <!-- //banner -->
-  <!-- welcome -->  
- <!--  -728x90- --> 
+</div>
+<!-- //banner -->
+<!-- welcome -->  
+<!--  -728x90- --> 
 
-  <div id="about" class="welcome">
-    <div class="container"> 
-      <div class="welcome-agileinfo">
-        <div class="col-md-6 w3ls_welcome_left"> 
-          <div class="w3ls_welcome_right1">
-            <h3 class="agileits-title"><span>A</span>bout Us</h3>
-            
-            <p class="text-justify">Shakuntala Enterprise is the official dealer of <font style="color:#fff;font-weight: bold;">Tunwal E-Bikes, Ahmedabad for Madhya
-Pradesh.</font> We are basically focused on environment-amity technologies and socially
-helpful products.Our Electric vehicles are highly optimized for all kind of terrain and Indian roads.They are robust and has extreme durability compared to its competitors.Our Products are <font style="color:#fff;font-weight:bold;"> Make in India</font>      Product which is dealing with highest vehicle power
-with lowest running cost. Due to its unique features like Center Lock, Disc Brake, Anti-
-Theft etc it has reached large number of satisfied customer in short span of time.</p>
+<div id="about" class="welcome">
+  <div class="container"> 
+    <div class="welcome-agileinfo">
+      <div class="col-md-6 w3ls_welcome_left"> 
+        <div class="w3ls_welcome_right1">
+          <h3 class="agileits-title"><span>A</span>bout Us</h3>
+
+          <p class="text-justify">Shakuntala Enterprise is the official dealer of <font style="color:#fff;font-weight: bold;">Tunwal E-Bikes, Ahmedabad for Madhya
+            Pradesh.</font> We are basically focused on environment-amity technologies and socially
+            helpful products.Our Electric vehicles are highly optimized for all kind of terrain and Indian roads.They are robust and has extreme durability compared to its competitors.Our Products are <font style="color:#fff;font-weight:bold;"> Make in India</font>      Product which is dealing with highest vehicle power
+            with lowest running cost. Due to its unique features like Center Lock, Disc Brake, Anti-
+            Theft etc it has reached large number of satisfied customer in short span of time.</p>
           </div> 
         </div>
         <div class="col-md-6 w3ls_welcome_right">   
@@ -89,47 +99,47 @@ Theft etc it has reached large number of satisfied customer in short span of tim
     <div class="slid-text">
       <h4 style="margin-top:-80px;">24x7 Customer Service Support</h4>
       <p class="text-justify" style="margin-top: -20px;">Customer satisfaction is always the top priority for Shakuntala Enterprises. To
-materialize this concept, we have provided On-Road Service facility for our customers
-No matter where your vehicle stops, we will be there to keep it zoom. We have currently
-large number of satisfied customers who trust us. One year free service which we are
-providing is also helped us to become the inevitable part of our customers, just like a
-family. Shakuntala Entreprises’s team believes in happy customers and happy society.For any kind of customer support kindly write to us at
-<font style="color:#000;font-weight:bold;">shakuntala.enterprises09@gmail.com</font> or go to contact us for more details.</p>
+        materialize this concept, we have provided On-Road Service facility for our customers
+        No matter where your vehicle stops, we will be there to keep it zoom. We have currently
+        large number of satisfied customers who trust us. One year free service which we are
+        providing is also helped us to become the inevitable part of our customers, just like a
+        family. Shakuntala Entreprises’s team believes in happy customers and happy society.For any kind of customer support kindly write to us at
+        <font style="color:#000;font-weight:bold;">shakuntala.enterprises09@gmail.com</font> or go to contact us for more details.</p>
+      </div>
+      <div class="clearfix"> </div>
     </div>
-    <div class="clearfix"> </div>
-  </div>
-  <div id="services" class="services">
-    <div class="container"> 
-      <h3 class="agileits-title w3title2"><span>S</span>ervices</h3>
-      <div class="services-row-agileinfo">
-        <div class="col-sm-3 services-w3grid">
-          <span class=" fa fa-motorcycle hi-icon" aria-hidden="true"></span>
-          <h5>On-Road Break-Down Service :</h5>
-          <p>We provide on road assistance to bring the Vehicles to our Service center. Kindly contact for assistance.</p>
+    <div id="services" class="services">
+      <div class="container"> 
+        <h3 class="agileits-title w3title2"><span>S</span>ervices</h3>
+        <div class="services-row-agileinfo">
+          <div class="col-sm-3 services-w3grid">
+            <span class=" fa fa-motorcycle hi-icon" aria-hidden="true"></span>
+            <h5>On-Road Break-Down Service :</h5>
+            <p>We provide on road assistance to bring the Vehicles to our Service center. Kindly contact for assistance.</p>
+          </div>
+          <div class="col-sm-3 services-w3grid">
+            <span class="fa fa-check-square-o hi-icon" aria-hidden="true"></span>
+            <h5>Free Insurance :</h5>
+            <p>We provide free 1Year Vehicle Insurance from our side to our esteem
+              customers.</p>
+            </div>
+
+            <div class="col-sm-3  services-w3grid">
+              <span class="fa fa-medkit hi-icon" aria-hidden="true"></span>
+              <h5>Safety-Kit : </h5>
+              <p>As a part of best safety we provide free helmet to all our customers.</p>
+            </div> 
+            <div class="col-sm-3 services-w3grid">
+              <span class="fa fa-bell hi-icon" aria-hidden="true"></span>
+              <h5>24x7 Customer Support: </h5>
+              <p>In case of any assistance customer can contact us to all given
+                numbers in contact us page. We are there for 24x7 assistance.</p>
+              </div>
+
+              <div class="clearfix"> </div>
+            </div> 
+          </div>
         </div>
-         <div class="col-sm-3 services-w3grid">
-          <span class="fa fa-check-square-o hi-icon" aria-hidden="true"></span>
-          <h5>Free Insurance :</h5>
-          <p>We provide free 1Year Vehicle Insurance from our side to our esteem
-          customers.</p>
-        </div>
-        
-        <div class="col-sm-3  services-w3grid">
-          <span class="fa fa-medkit hi-icon" aria-hidden="true"></span>
-          <h5>Safety-Kit : </h5>
-          <p>As a part of best safety we provide free helmet to all our customers.</p>
-        </div> 
-        <div class="col-sm-3 services-w3grid">
-          <span class="fa fa-bell hi-icon" aria-hidden="true"></span>
-          <h5>24x7 Customer Support: </h5>
-          <p>In case of any assistance customer can contact us to all given
-          numbers in contact us page. We are there for 24x7 assistance.</p>
-        </div>
-       
-        <div class="clearfix"> </div>
-      </div> 
-     </div>
-  </div>
   <!-- //services 
   <!-- specifications -->
   <div id="spec" class="spec jarallax">
@@ -138,55 +148,55 @@ family. Shakuntala Entreprises’s team believes in happy customers and happy so
       <div class="specw3-agileits">
 
         <center>
-        <div class=" spec-grids"> 
-          <h4>MODELS</h4>
-          <ul>
-            <li>
-              <div class="center">
-                <p><a href="/specification-sport-mini-63">SPORT 63 MINI</a></p>
-              </div>
-              
-              <div class="clearfix"> </div>
-            </li>
-            <li>
-              <div class="center">
-                <p><a href="/specification-storm-zx">STORM ZX</a></p>
-              </div>
-             
-              <div class="clearfix"> </div>
-            </li>
-            <li>
-              <div class="center">
-                <p><a href="/specification-sport-63">SPORT 63</a></p>
-              </div>
-              
-              <div class="clearfix"> </div>
-            </li>
-            <li>
-              <div class="center">
-                <p><a href="/specification-electrica-48">ELECTRICA48</a></p>
-              </div>
-             
-              <div class="clearfix"> </div>
-            </li>
-            <li>
-              <div class="center">
-                <p><a href="/specification-flash">FLASH</a></p>
-              </div>
-             
-              <div class="clearfix"> </div>
-            </li>
-            <li>
-              <div class="center">
-                <p><a href="/specification-dora">DORA</a></p>
-              </div>
-              
-              <div class="clearfix"> </div>
-            </li>
-          </ul>
-        </div>  
+          <div class=" spec-grids"> 
+            <h4>MODELS</h4>
+            <ul>
+              <li>
+                <div class="center">
+                  <p><a href="/specification-sport-mini-63">SPORT 63 MINI</a></p>
+                </div>
+
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="center">
+                  <p><a href="/specification-storm-zx">STORM ZX</a></p>
+                </div>
+
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="center">
+                  <p><a href="/specification-sport-63">SPORT 63</a></p>
+                </div>
+
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="center">
+                  <p><a href="/specification-electrica-48">ELECTRICA48</a></p>
+                </div>
+
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="center">
+                  <p><a href="/specification-flash">FLASH</a></p>
+                </div>
+
+                <div class="clearfix"> </div>
+              </li>
+              <li>
+                <div class="center">
+                  <p><a href="/specification-dora">DORA</a></p>
+                </div>
+
+                <div class="clearfix"> </div>
+              </li>
+            </ul>
+          </div>  
         </center>
-       
+
         <div class="clearfix"> </div>
       </div>
     </div>
@@ -196,7 +206,7 @@ family. Shakuntala Entreprises’s team believes in happy customers and happy so
   <div id="news" class="news">   
     <div class="container"> 
       <h3 class="agileits-title w3title2"><a href="/media-gallery" style="color:#EA7686;"><span>M</span>EDIA COVERAGE </a></h3>
-         </div> 
+    </div> 
   </div>
   <!-- //news --> 
   <!-- gallery -->
@@ -207,92 +217,92 @@ family. Shakuntala Entreprises’s team believes in happy customers and happy so
         <div class="gallery-grids-top">
           <a class="b-link-stripe b-animate-go"  href ="assets/g3.jpg"
           data-lightbox="example-set"  data-title="">
-            <%= image_tag "g3.jpg",class: "img-responsive", alt: "" %>
+          <%= image_tag "g3.jpg",class: "img-responsive", alt: "" %>
+          <div class="b-wrapper">
+            <span class="b-animate b-from-left"> 
+              <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+            </span>         
+          </div>
+        </a>
+      </div>
+      <div class="gallery-grids-top">
+        <div class="col-sm-6 col-xs-6 bottom-grids">
+          <a class="b-link-stripe b-animate-go" href="assets/img2.jpg" data-lightbox=""  >
+            <%= image_tag "img2.jpg",class: "img-responsive", alt: "" %>
             <div class="b-wrapper">
-              <span class="b-animate b-from-left"> 
+              <span class="b-animate b-from-left">
                 <i class="fa fa-arrows-alt" aria-hidden="true"></i>
               </span>         
             </div>
           </a>
         </div>
-        <div class="gallery-grids-top">
-          <div class="col-sm-6 col-xs-6 bottom-grids">
-            <a class="b-link-stripe b-animate-go" href="assets/img2.jpg" data-lightbox=""  >
-              <%= image_tag "img2.jpg",class: "img-responsive", alt: "" %>
-              <div class="b-wrapper">
-                <span class="b-animate b-from-left">
-                  <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-                </span>         
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-6 col-xs-6 bottom-grids">
-            <a class="b-link-stripe b-animate-go" href="assets/img4.jpg" data-lightbox="example-set" data-title=" ">
-              <%= image_tag "img4.jpg",class: "img-responsive", alt: "" %>
-              <div class="b-wrapper">
-                <span class="b-animate b-from-left">
-                  <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-                </span>         
-              </div>
-            </a>
-          </div>
-          <div class="clearfix"></div>
+        <div class="col-sm-6 col-xs-6 bottom-grids">
+          <a class="b-link-stripe b-animate-go" href="assets/img4.jpg" data-lightbox="example-set" data-title=" ">
+            <%= image_tag "img4.jpg",class: "img-responsive", alt: "" %>
+            <div class="b-wrapper">
+              <span class="b-animate b-from-left">
+                <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+              </span>         
+            </div>
+          </a>
         </div>
+        <div class="clearfix"></div>
       </div>
-      <div class="col-sm-3 col-xs-6 gallery-grids glry-grid2">
-        <a class="b-link-stripe b-animate-go" href="assets/g2.jpg" data-lightbox="example-set" data-title=" ">
-          <%= image_tag "g2.jpg",class: "img-responsive", alt: "" %>
-          <div class="b-wrapper">
-            <span class="b-animate b-from-left">
-              <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-            </span>         
-          </div>
-        </a>
-      </div>
-      <div class="col-sm-3 col-xs-6 gallery-grids glry-grid3">
-        <a class="b-link-stripe b-animate-go" href="assets/g1.jpg" data-lightbox="example-set" data-title=" ">
-          <%= image_tag "g1.jpg",class: "img-responsive", alt: "" %>
-          <div class="b-wrapper">
-            <span class="b-animate b-from-left">
-              <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-            </span>         
-          </div>
-        </a>
-        <a class="b-link-stripe b-animate-go" href="assets/g5.jpg" data-lightbox="example-set" data-title=" ">
-          <%= image_tag "g5.jpg",class: "img-responsive", alt: "" %>
-          <div class="b-wrapper">
-            <span class="b-animate b-from-left">
-              <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-            </span>         
-          </div>
-        </a>
-      </div>
-      <div class="clearfix"></div>
-     <a href="/video-gallery"><h3 class="agileits-title w3title2" style="margin-top: 100PX;"><span>V</span>IDEO GALLERY</h3></a>
     </div>
+    <div class="col-sm-3 col-xs-6 gallery-grids glry-grid2">
+      <a class="b-link-stripe b-animate-go" href="assets/g2.jpg" data-lightbox="example-set" data-title=" ">
+        <%= image_tag "g2.jpg",class: "img-responsive", alt: "" %>
+        <div class="b-wrapper">
+          <span class="b-animate b-from-left">
+            <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+          </span>         
+        </div>
+      </a>
     </div>
-  <!-- //gallery -->
-  <!-- contact -->
-  <div class="contact" id="contact">
-    <div class="container"> 
+    <div class="col-sm-3 col-xs-6 gallery-grids glry-grid3">
+      <a class="b-link-stripe b-animate-go" href="assets/g1.jpg" data-lightbox="example-set" data-title=" ">
+        <%= image_tag "g1.jpg",class: "img-responsive", alt: "" %>
+        <div class="b-wrapper">
+          <span class="b-animate b-from-left">
+            <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+          </span>         
+        </div>
+      </a>
+      <a class="b-link-stripe b-animate-go" href="assets/g5.jpg" data-lightbox="example-set" data-title=" ">
+        <%= image_tag "g5.jpg",class: "img-responsive", alt: "" %>
+        <div class="b-wrapper">
+          <span class="b-animate b-from-left">
+            <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+          </span>         
+        </div>
+      </a>
+    </div>
+    <div class="clearfix"></div>
+    <a href="/video-gallery"><h3 class="agileits-title w3title2" style="margin-top: 100PX;"><span>V</span>IDEO GALLERY</h3></a>
+  </div>
+</div>
+<!-- //gallery -->
+<!-- contact -->
+<div class="contact" id="contact">
+  <div class="container"> 
 
-      <h3 class="agileits-title w3title2"><span>E</span>nquiry</h3>
-      <div class="contact-grids">
-        <div class="col-md-5 address">
-          <h4>Get in touch with us</h4>
-          <p class="cnt-p">Get All The Latest Updates From The Automobile Universe.</p>
-          <div class="agile_social_icons">
-            <ul class="agileits_social_list">
-              <li><a href="https://www.facebook.com/tunwal.automobile/" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="https://twitter.com/EbikestunwalSE" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.instagram.com/shakuntalaenterprises/" class="w3_agile_ins"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
-          </div>  
-          <p>Head office : House No.36, Sector- FB , sch. 94, Bengali Pipliyahana Service Road , Near Lokhandwala Indore (M.P.) </p>
-          <p>Telephone : 0731-4974841</p>
-          <p>Contact No:7987163048<br>
-                        9340338755<br>
-                        9993677539</p>
+    <h3 class="agileits-title w3title2"><span>E</span>nquiry</h3>
+    <div class="contact-grids">
+      <div class="col-md-5 address">
+        <h4>Get in touch with us</h4>
+        <p class="cnt-p">Get All The Latest Updates From The Automobile Universe.</p>
+        <div class="agile_social_icons">
+          <ul class="agileits_social_list">
+            <li><a href="https://www.facebook.com/tunwal.automobile/" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/EbikestunwalSE" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/shakuntalaenterprises/" class="w3_agile_ins"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>  
+        <p>Head office : House No.36, Sector- FB , sch. 94, Bengali Pipliyahana Service Road , Near Lokhandwala Indore (M.P.) </p>
+        <p>Telephone : 0731-4974841</p>
+        <p>Contact No:7987163048<br>
+          9340338755<br>
+          9993677539</p>
           <p>Email : <a href="mailto:example@mail.com"> shakuntala.enterprises09@gmail.com
           </a></p>
         </div>
@@ -310,9 +320,9 @@ family. Shakuntala Entreprises’s team believes in happy customers and happy so
       <div class="w3-agilemap">  
        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d811.0686117421604!2d75.90569702916271!3d22.714908836155068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2d1f2515dc9%3A0xeeb8e900626f1e04!2sShakuntala+Enterprises+-+Tunwal+E-bikes+Dealer!5e1!3m2!1sen!2sin!4v1512026734013" height="400" ></iframe>
 
-      </div> 
-    </div>
-  </div>
+     </div> 
+   </div>
+ </div>
 
 
  <!--  <script type="text/javascript">
@@ -327,13 +337,13 @@ family. Shakuntala Entreprises’s team believes in happy customers and happy so
   <!-- start-smooth-scrolling -->
   <!-- <script type="text/javascript" src="bootstrap/js/move-top.js"></script> -->
   <script type="text/javascript">
-      jQuery(document).ready(function($) {
-        $(".scroll").click(function(event){   
-          event.preventDefault();
-      
-      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-        });
+    jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){   
+        event.preventDefault();
+
+        $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
       });
+    });
   </script>
 
   <!-- //end-smooth-scrolling --> 
@@ -355,5 +365,10 @@ family. Shakuntala Entreprises’s team believes in happy customers and happy so
   </script> -->
   <!-- //smooth-scrolling-of-move-up -->  
   <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript">
+   $(window).load(function(){        
+   $('#myModal').modal('show');
+    }); 
+</script>
