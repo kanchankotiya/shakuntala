@@ -1,0 +1,98 @@
+<div class="container">
+  <div class="register-page">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="heading-register text-center">
+          <h3>Register Service Center</h3>
+        </div>
+        <div class="service-reg-form">
+          <form action="/create_registration" method="post"> 
+            <div class="form-group">
+              <div class="label1">
+                <label>Service Center Name</label>
+              </div>  
+              <input type="text" name="register[name]" placeholder="Name" required="true", class="form-control">
+            </div>  
+            <div class="form-group">
+              <div class="label1">
+                <label>Your Location</label>
+              </div> 
+              <input type="text" name="register[location]" placeholder="Location" required="true", class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="label1">
+                <label>Owner Name</label>
+              </div> 
+              <input type="text" name="register[owner_name]" placeholder="Owner Name" required="true", class="form-control">
+            </div>
+            <div class="row"> 
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="label1">
+                    <label>Owner Contact Number</label>
+                  </div> 
+                  <input type="text" name="register[owner_contact_no]" placeholder="Owner Contact" required="true", class="form-control">
+                </div>
+              </div>  
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="label1">
+                    <label> Your Email</label>
+                  </div> 
+                  <input type="text" name="register[email_id]" placeholder="Email" required="true", class="form-control">
+                </div>
+              </div> 
+            </div>  
+            <div class="form-group">
+              <div class="label1">
+                <label>Company Aadhar</label>
+              </div> 
+              <input type="text" name="register[company_aadhar]" placeholder="Company Aadhar" required="true", class="form-control">
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="label1">
+                    <label>Registration Number</label>
+                  </div> 
+                  <input type="text" name="register[registration_no]" placeholder="Registration Number" required="", class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="label1">
+                    <label>CIN Number</label>
+                  </div> 
+                  <input type="text" name="register[cin_no]" placeholder="CIN Number" required="", class="form-control">
+                </div>
+              </div>    
+            </div> 
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="label1">
+                    <label>GST Number</label>
+                  </div> 
+                  <input type="text" name="register[gst_no]" placeholder="GST Number" required="true", class="form-control" >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="label1">
+                    <label>Product Range</label>
+                  </div> 
+                  <input type="text" name="register[product_range]" placeholder="Product Range" required="true", class="form-control" >
+                </div>
+              </div>    
+            </div>  
+            <div class="row register-btn">
+              <div class="col-md-8 col-md-offset-2">
+               <button type="Submit" class="btn btn-block">Submit</button>
+              </div>
+            </div>  
+          </form>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>

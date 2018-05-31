@@ -72,6 +72,29 @@ body a:hover,body a:focus{
   text-shadow: 2px 2px 2px black;
   margin-top: -30px;
 }
+.register-page{
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.heading-register{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: #ea7669;
+}
+.heading-register h3{font-weight: bold;}
+.label1{margin-bottom: 14px;}
+.service-reg-form{
+  background-color:#efefef;
+  padding: 30px;
+  box-shadow: -1px 0px 2px 2px #c1c1c1;
+}
+.register-btn button {
+  background-color: #ea7686;
+  margin-top: 17%;
+  color: #fff;
+  box-shadow: -1px 1px 2px 2px #7b7b7b;
+
+}
 @media only screen and (max-width: 768px) {
   .logo h1 {
     font-size: 3.5em;

@@ -33,6 +33,13 @@ class HomeController < ApplicationController
    
   end
 
+  def create_registration
+    @register = ServiceCenter.new(register_params)
+    if @register .save
+      redirect_to root_path
+    end 
+  end
+
   def create_contact
     @contact =ContactUs.new(contact_params)
     if @contact.save
@@ -44,6 +51,10 @@ class HomeController < ApplicationController
   private
   def contact_params
     params.require(:contact).permit(:name,:email,:message)
+  end
+
+  def register_params
+    params.require(:register).permit(:name, :location , :owner_name,:owner_contact_no, :email_id, :company_aadhar, :registration_no, :cin_no, :gst_no, :product_range)
   end
 
 end

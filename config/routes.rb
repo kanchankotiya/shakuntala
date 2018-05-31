@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get '/specification-dora'=>"home#specification_6"
   get '/video-gallery'=>"home#video_gallery"
   get '/media-gallery'=>"home#media_gallery"
+  get '/create_service_registration'=>"home#create_service_registration"
+  post'/create_registration'=>"home#create_registration"
   post '/create_contact' => "home#create_contact"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
